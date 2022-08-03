@@ -1,4 +1,6 @@
 import { sourceService } from './source';
+import patternData from '../initPatterns/PatternData.json';
+import { patternService } from './pattern';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const Source = require('../models/mongoose/source');
@@ -31,6 +33,25 @@ export class InitService {
                 )
             }
         }
+
+        await this.initPatterns();
+    }
+
+    // method that creates the initial patterns if they are not existing at the systems startup
+    public async initPatterns(): Promise<void> {
+        const patterns = patternData;
+        console.log(patterns)
+
+        const existingPatterns = await patternService.list();
+        console.log(existingPatterns)
+
+        for (const initPat of patterns) {
+            if (!(existingPatterns.some(el => el.name === initPat.name))) {
+                await patternService.create(initPat);
+                console.log(initPat.name)
+            }
+        }
+
     }
 
     // method that manipulates the dates of the last fetching actions for debugging purposes

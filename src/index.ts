@@ -13,7 +13,7 @@ try {
     server.start(+config.app.port);
     initService.init();
 
-    cron.schedule('* */4 * * 1-5', () => {
+    cron.schedule('1 */4 * * *', () => {
         console.log('Data Acquisition and Playbook Generation runs every four hours');
         rdm.run();
     });
