@@ -1,0 +1,23 @@
+//Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+.layout-sidebar .layout-logo
+{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    img {
+        width: 80%
+    }
+}
+
+.p-field>small {
+    margin-top: .25rem;
+}
+
+.p-error,
+.p-invalid {
+    color: $errorColor;
+}
+
+.p-toolbar {
+    background: #fff;
+    border: 0px;
+}
