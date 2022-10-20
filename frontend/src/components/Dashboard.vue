@@ -1,6 +1,6 @@
 // dashboard for the landing page of the webapp where the general composition of tasks are shown in a pie chart
 <template>
-    <h1>Welcome to the SOAR Platform</h1>
+    <h2>Welcome to ad2play - From Security Advisories to Vulnerability Playbooks</h2>
 
     <div class="p-grid p-fluid dashboard">
         <div class="p-col-12 p-lg-4">

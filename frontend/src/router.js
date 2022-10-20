@@ -135,7 +135,7 @@ const router = createRouter({
 
 
 router.beforeEach(async (to) => {
-    document.title = "SOAR" + ((to.meta.title) ? " - " + to.meta.title : "");
+    document.title = "Ad2Play" + ((to.meta.title) ? " - " + to.meta.title : "");
 })
 
 export default router;

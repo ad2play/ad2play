@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --dest /var/www/ad2play",
     "build:prod": "vue-cli-service build",
     "start:prod": "node server.js",
     "build:staging": "vue-cli-service build --mode staging",
