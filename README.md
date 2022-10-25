@@ -4,6 +4,11 @@
 In this reporsitory you can find the prototype of a SOAR solution that is aimed towards the automation of the incident response process for industrial IoT devices. The overall structure of the concept is shown in the following figure.
 </p>
 
+## Demo
+
+https://user-images.githubusercontent.com/23430598/197812689-4dc072e7-36cb-4060-a07c-3559e8d910f7.mov
+
+
 ## Concept Structure
 
 ![Concept Structure](./img/Concept_Structure.png)
