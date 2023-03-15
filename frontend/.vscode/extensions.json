@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "formulahendry.auto-rename-tag",
+        "wix.vscode-import-cost",
+        "zignd.html-css-class-completion",
+        "orta.vscode-jest",
+        "pkief.material-icon-theme",
+        "kisstkondoros.vscode-codemetrics",
+        "irongeek.vscode-env",
+        "mhutchie.git-graph",
+        "octref.vetur"
+    ]
+}
